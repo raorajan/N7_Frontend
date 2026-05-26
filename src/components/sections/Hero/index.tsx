@@ -6,29 +6,26 @@ import { TrustedBy } from "../TrustedBy";
 
 export function HeroSection() {
   return (
-    <section className="pt-[212px] pb-20 relative overflow-hidden">
-      {/* Background Glow */}
-      <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[120px] pointer-events-none -z-10"></div>
-      
+    <section className="pt-[140px] lg:pt-[212px] pb-12 lg:pb-0 relative overflow-hidden max-w-[1440px] mx-auto lg:h-[650px]">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           
           {/* Left Content */}
-          <div className="w-[608px] h-[319px] flex flex-col gap-[20px] lg:-mt-20">
+          <div className="w-full max-w-[608px] flex flex-col gap-[20px] lg:-mt-20 mx-auto text-center lg:text-left items-center lg:items-start">
             <div>
               <h1 
-                className="w-full md:w-[608px] md:h-[160px] font-medium text-[#E9F4F9] text-5xl md:text-[60px] leading-[1.2] tracking-[-0.01em] mb-3"
+                className="w-full md:max-w-[608px] md:h-[160px] font-medium text-[#E9F4F9] text-4xl sm:text-5xl lg:text-[60px] leading-[1.2] tracking-[-0.01em] mb-4 lg:mb-3 mx-auto lg:mx-0"
                 style={{ fontFamily: 'var(--font-archivo)' }}
               >
                 The new foundation <br className="hidden md:block" />
                 of modern banking
               </h1>
-              <p className="text-gray-400 text-lg leading-relaxed max-w-md">
+              <p className="text-gray-400 text-base sm:text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
                 We drive innovation and growth, provide seamless customer experience and operational excellence
               </p>
             </div>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 w-full mt-2 lg:mt-0">
               <Button variant="primary" size="default">
                 Request Demo
               </Button>
@@ -39,10 +36,18 @@ export function HeroSection() {
           </div>
           
           {/* Right Content - Visuals */}
-          <div className="relative w-full max-w-[562px] h-[301px] mt-12 lg:mt-0 lg:ml-auto lg:mr-0 shrink-0">
+          <div className="relative w-full max-w-[580px] h-[301px] mt-8 lg:mt-0 mx-auto lg:ml-auto lg:mr-0 shrink-0 transform scale-[0.55] sm:scale-75 md:scale-90 lg:scale-100 origin-top lg:origin-center -mb-[135px] sm:-mb-[75px] md:-mb-[30px] lg:mb-0">
             
             {/* Glow Circle behind main image */}
-            <div className="absolute top-[50%] left-[calc(130px+155px)] -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] rounded-full bg-blue-500/30 blur-[60px] z-[5] pointer-events-none"></div>
+            <div 
+              className="absolute top-[50%] left-[calc(130px+155px)] -translate-x-1/2 -translate-y-1/2 z-[5] pointer-events-none rounded-full blur-[100px]"
+              style={{
+                width: "298.87px",
+                height: "298.87px",
+                opacity: 0.5,
+                background: "linear-gradient(103.43deg, #00B4FD -1.02%, #003ACE 83.53%)",
+              }}
+            ></div>
 
             {/* Main Image */}
             <div className="absolute top-0 left-[130px] w-[310px] h-[270px] z-10 rounded-[31px] overflow-hidden shadow-2xl border border-white/10">

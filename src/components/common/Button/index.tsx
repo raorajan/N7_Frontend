@@ -19,7 +19,7 @@ export function Button({
   const baseStyles = "inline-flex items-center justify-center uppercase transition-colors whitespace-nowrap";
   
   const variants = {
-    primary: "bg-[#0066FF] hover:bg-blue-600 text-white rounded-lg border border-transparent font-medium tracking-wider",
+    primary: "bg-[#0066FF] hover:bg-[#F2F8FC] text-white hover:text-[#0055FF] rounded-lg border border-transparent hover:border-[#F2F8FC] font-medium tracking-wider",
     outline: "bg-transparent border border-white/20 hover:bg-[#F2F8FC] hover:text-[#0055FF] hover:border-[#F2F8FC] text-white rounded-lg font-medium tracking-wider",
     "outline-nav": "bg-transparent border border-white/80 hover:bg-[#F2F8FC] hover:text-[#0055FF] hover:border-[#F2F8FC] text-white rounded-[6px]"
   };

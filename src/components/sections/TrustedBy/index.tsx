@@ -19,7 +19,7 @@ export function TrustedBy({ label = "Trusted By:" }: TrustedByProps) {
     <div className="mt-3 border-t border-white/5 pt-10">
       <Container>
         <p className="text-gray-400 text-sm mb-6">{label}</p>
-        <div className="flex items-center w-[621px] h-[18px] gap-[12.4px] opacity-90 grayscale hover:grayscale-0 transition-all duration-300">
+        <div className="flex flex-wrap lg:flex-nowrap items-center w-full max-w-[621px] gap-[12.4px] opacity-90 grayscale hover:grayscale-0 transition-all duration-300">
           {brands.map((brand) => (
             <div key={brand.name} className="flex items-center w-[86px] h-[18px] gap-[1.6px] shrink-0">
               <Image
@@ -30,12 +30,12 @@ export function TrustedBy({ label = "Trusted By:" }: TrustedByProps) {
                 className="object-contain h-[18px] w-auto shrink-0"
               />
               <span
-                className={`font-bold text-white whitespace-nowrap align-middle${brand.uppercase ? " uppercase" : ""}`}
+                className={`font-bold whitespace-nowrap align-middle${brand.uppercase ? " uppercase" : ""}`}
                 style={{
                   fontFamily: "var(--font-roboto)",
-                  fontSize: "10px",
+                  fontSize: "12px",
                   lineHeight: "110%",
-                  color:"#586E84",
+                  color: "#586E84",
                   letterSpacing: "0%",
                 }}
               >
