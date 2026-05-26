@@ -25,11 +25,11 @@ export function HeroSection() {
               </p>
             </div>
             
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 w-full mt-2 lg:mt-0">
-              <Button variant="primary" size="default">
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 w-full mt-2 lg:mt-0">
+              <Button variant="primary" size="default" className="w-full sm:w-[180px]">
                 Request Demo
               </Button>
-              <Button variant="outline" size="default">
+              <Button variant="outline" size="default" className="w-full sm:w-[180px]">
                 Contact Us
               </Button>
             </div>
