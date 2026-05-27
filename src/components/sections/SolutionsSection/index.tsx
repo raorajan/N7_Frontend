@@ -40,8 +40,8 @@ export function SolutionsSection() {
         </div>
 
         {/* Left Box */}
-        <div className="contents lg:block z-10 relative">
-          <div className="lg:absolute lg:top-[156.88px] lg:left-[80px] w-full lg:w-[607.83px] h-auto lg:h-[308px] flex flex-col gap-[16px] items-start justify-center p-6 lg:p-0 mt-8 lg:mt-0">
+        <div className="relative z-10 w-full lg:static">
+          <div className="relative lg:absolute lg:top-[156.88px] lg:left-[80px] w-full lg:w-[607.83px] h-auto lg:h-[308px] flex flex-col gap-[16px] items-start justify-center mt-8 lg:mt-0">
             <h2
               className="text-[#E9F4F9] text-[32px] lg:text-[48px] font-normal leading-[120%] tracking-[-1%]"
               style={{ fontFamily: "var(--font-archivo)" }}
@@ -58,7 +58,7 @@ export function SolutionsSection() {
             <div className="flex flex-col items-start gap-[16px]">
               <Link
                 href="#demo"
-                className="inline-flex items-center justify-center uppercase text-white bg-[#0066FF] hover:bg-[#F2F8FC] hover:text-[#0055FF] transition-colors whitespace-nowrap font-medium tracking-wider w-full sm:w-[226px] h-[49px] rounded-[10px]"
+                className="inline-flex items-center justify-center uppercase text-white bg-[#0066FF] hover:bg-[#F2F8FC] hover:text-[#0055FF] transition-colors whitespace-nowrap font-medium tracking-wider w-full lg:w-[226px] h-[49px] rounded-[10px]"
                 style={{
                   fontFamily: "var(--font-chivo-mono)",
                   fontSize: "12px",
@@ -78,12 +78,11 @@ export function SolutionsSection() {
         </div>
 
         {/* Right Box (Dashboard Image) */}
-        <div className="contents lg:block z-10 relative">
+        <div className="relative z-10 w-full lg:static">
           <div 
-            className="lg:absolute w-full lg:w-[651.66px] h-auto lg:h-[461.42px] flex flex-col items-center justify-center p-6 lg:p-0 mt-8 lg:mt-0 overflow-visible"
-            style={{ top: '80.17px', left: '727px' }}
+            className="relative lg:absolute lg:top-[80.17px] lg:left-[727px] w-full lg:w-[651.66px] h-auto lg:h-[461.42px] flex flex-col items-center justify-center mt-8 lg:mt-0"
           >
-            <div className="relative w-full h-[300px] lg:h-[410px]">
+            <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[410px]">
               <Image 
                 src="/images/icons/dashboard.png" 
                 alt="AML Dashboard" 
@@ -92,7 +91,6 @@ export function SolutionsSection() {
                 sizes="(max-width: 1024px) 100vw, 651px"
               />
             </div>
-           
           </div>
         </div>
 
