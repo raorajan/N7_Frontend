@@ -77,11 +77,11 @@ export function SolutionsSection() {
 
         <div className="relative z-10 w-full lg:static">
           <div 
-            className="relative lg:absolute lg:top-[80.17px] lg:left-[727px] w-full lg:w-[651.66px] h-auto lg:h-[461.42px] flex flex-col items-center justify-center mt-8 lg:mt-0"
+            className="relative lg:absolute lg:top-[80.17px] lg:right-[-80px] w-full lg:w-[651.66px] h-auto lg:h-[461.42px] flex flex-col items-center justify-center mt-8 lg:mt-0"
           >
             <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[410px]">
               <Image 
-                src="/images/icons/dashboard.png" 
+                src="/images/icons/Frame 90.png" 
                 alt="AML Dashboard" 
                 fill
                 className="object-contain rounded-[10px]"

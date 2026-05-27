@@ -24,13 +24,13 @@ export function BankingCoreSection() {
     >
       <div className="relative w-full h-full lg:h-[681px] flex flex-col lg:block px-6 lg:px-0">
         <div className="relative z-10 w-full lg:static">
-          <div className="relative lg:absolute lg:top-[110px] lg:left-[-159px] w-full lg:w-[651.66px] h-[320px] lg:h-[461.42px] mt-8 lg:mt-0">
+          <div className="relative lg:absolute lg:top-[110px] lg:left-[-50px] w-[90%] sm:w-[85%] lg:w-[651.66px] h-[320px] lg:h-[461.42px] mt-8 lg:mt-0 ml-auto lg:ml-0">
             <Image
               src="/images/icons/corebanking.png"
               alt="KYC Dashboard"
               fill
-              className="object-contain"
-              sizes="(max-width: 1024px) 100vw, 652px"
+              className="object-contain object-right lg:object-center"
+              sizes="(max-width: 1024px) 90vw, 652px"
               priority
             />
           </div>
