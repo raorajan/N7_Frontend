@@ -16,10 +16,10 @@ export function Button({
   children,
   ...props
 }: ButtonProps) {
-  const baseStyles = "inline-flex items-center justify-center uppercase transition-colors whitespace-nowrap";
+  const baseStyles = "inline-flex items-center justify-center uppercase transition-colors font-weight-400 whitespace-nowrap font-[family-name:var(--font-chivo-mono)]";
   
   const variants = {
-    primary: "bg-[#0066FF] hover:bg-[#F2F8FC] text-white hover:text-[#0055FF] rounded-lg border border-transparent hover:border-[#F2F8FC] font-medium tracking-wider",
+    primary: "bg-[linear-gradient(106.53deg,#00B4FD_-5.68%,#003ACE_86.98%)] hover:bg-none hover:bg-[#F2F8FC] text-white hover:text-[#0055FF] rounded-lg border border-transparent hover:border-[#F2F8FC] font-medium tracking-wider",
     outline: "bg-transparent border border-white/20 hover:bg-[#F2F8FC] hover:text-[#0055FF] hover:border-[#F2F8FC] text-white rounded-lg font-medium tracking-wider",
     "outline-nav": "bg-transparent border border-white/80 hover:bg-[#F2F8FC] hover:text-[#0055FF] hover:border-[#F2F8FC] text-white rounded-[6px]"
   };

@@ -8,6 +8,7 @@ import { MarqueeBanner } from "@/components/sections/MarqueeBanner";
 import { DigitalBankingSection } from "@/components/sections/DigitalBanking";
 import { InsightsSection } from "@/components/sections/Insights";
 import { CaseStudiesSection } from "@/components/sections/CaseStudies";
+import { Footer } from "@/components/common/Footer";
 
 export default function HomePage() {
   return (
@@ -22,7 +23,8 @@ export default function HomePage() {
       <DigitalBankingSection />
       <InsightsSection />
       <CaseStudiesSection />
-      {/* Other sections will go here once they are built */}
+      <PaperlessCTASection />
+      <Footer />
     </>
   );
 }
