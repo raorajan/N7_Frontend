@@ -5,9 +5,9 @@ export function InsightsSection() {
     <section className="relative w-full" style={{ background: "#000D12" }}>
       <div className="max-w-[1440px] mx-auto w-full px-6 lg:px-[80px] py-8 lg:py-[120px] flex flex-col lg:flex-row gap-8 lg:gap-[100px]">
         
-        <div className="w-full lg:w-[360px] xl:w-[420px] shrink-0 flex flex-col items-start gap-10">
+        <div className="w-full lg:w-[360px] xl:w-[420px] shrink-0 flex flex-col items-center lg:items-start text-center lg:text-left gap-10">
           <h2 
-            className="text-white text-[28px] md:text-[30px] font-normal leading-[120%] tracking-[-0.01em]" 
+            className="text-white text-[28px] md:text-[32px] font-normal leading-[120%] tracking-[-0.01em]" 
             style={{ fontFamily: "var(--font-archivo)" }}
           >
             Get yourself up-to-speed on all the things happening in fintech
@@ -25,10 +25,10 @@ export function InsightsSection() {
 
         <div className="flex-1 flex flex-col gap-6 w-full max-w-[800px] ml-auto">
           
-          <div className="w-full rounded-[24px] overflow-hidden flex flex-col md:flex-row p-5 rounded-3xl" style={{ background: "#05131A" }}>
+          <div className="w-full rounded-[24px] overflow-hidden flex flex-col md:flex-row p-5" style={{ background: "#05131A" }}>
             
-            <div className="w-full md:w-[40%] flex items-center justify-center shrink-0 aspect-square rounded-2xl overflow-hidden" style={{ background: "#0B1E36" }}>
-              <img src="/images/icons/Frame%2054.png" alt="Featured insight" className="w-full h-full object-contain opacity-90" />
+            <div className="w-full max-w-[280px] md:max-w-none mx-auto md:mx-0 md:w-[40%] flex items-center justify-center shrink-0 aspect-square rounded-2xl overflow-hidden" style={{ background: "#0B1E36" }}>
+              <img src="/images/icons/Frame%2054.png" alt="Featured insight" className="w-full h-full object-contain opacity-90 p-4 lg:p-0" />
             </div>
             
             <div className="flex flex-col p-2 md:p-1 ml-5 justify-between gap-8 flex-1">

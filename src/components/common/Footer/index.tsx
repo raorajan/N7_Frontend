@@ -122,6 +122,16 @@ export function Footer() {
 
           </div>
         </div>
+
+        {/* Copyright */}
+        <div className="mt-5 border-t border-white/10 pt-6 pb-1 w-full">
+          <p 
+            className="text-[#E9F4F9]/50 text-[11px] lg:text-xs text-center leading-relaxed" 
+            style={{ fontFamily: "var(--font-archivo)" }}
+          >
+            Copyright © 2022 by Linktia Infosystems Limited — [CB7 and N7 as Commercial Brand] — [Registered under the Companies Act 2006 in England and Wales | Number of Incorporation 13100992]
+          </p>
+        </div>
       </div>
     </footer>
   );

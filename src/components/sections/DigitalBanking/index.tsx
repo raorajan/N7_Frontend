@@ -24,7 +24,7 @@ export function DigitalBankingSection() {
             <div className="flex flex-col gap-4 mt-2">
               <Link
                 href="#demo"
-                className="inline-flex items-center justify-center uppercase text-white bg-[#0066FF] hover:bg-[#F2F8FC] hover:text-[#0055FF] transition-colors font-medium tracking-wider w-[200px] h-[49px] rounded-[10px] text-[12px]"
+                className="inline-flex items-center justify-center uppercase text-white bg-[#0066FF] hover:bg-[#F2F8FC] hover:text-[#0055FF] transition-colors font-medium tracking-wider w-[226px] h-[49px] rounded-[10px] text-[12px]"
                 style={{ fontFamily: "var(--font-chivo-mono)" }}
               >
                 Request Demo
@@ -96,7 +96,7 @@ export function DigitalBankingSection() {
             <p className="text-[#4A6678] text-[15px] leading-[160%] max-w-[500px]" style={{ fontFamily: "var(--font-archivo)" }}>
               N7 helps your financial institution improve the client experience, automate and optimize procedures
             </p>
-            <Link href="#demo" className="inline-flex items-center justify-center uppercase text-white bg-[#0066FF] hover:bg-[#F2F8FC] hover:text-[#0055FF] transition-colors font-medium tracking-wider w-full md:w-[200px] h-[49px] rounded-[10px] text-[12px]" style={{ fontFamily: "var(--font-chivo-mono)" }}>
+            <Link href="#demo" className="inline-flex items-center justify-center uppercase text-white bg-[#0066FF] hover:bg-[#F2F8FC] hover:text-[#0055FF] transition-colors font-medium tracking-wider w-full sm:w-[226px] h-[49px] rounded-[10px] text-[12px]" style={{ fontFamily: "var(--font-chivo-mono)" }}>
               Request Demo
             </Link>
           </div>
@@ -185,7 +185,7 @@ export function DigitalBankingSection() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row lg:flex-row items-stretch sm:items-center gap-4 w-full lg:w-auto shrink-0">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full lg:w-auto shrink-0">
               <Link
                 href="/contact"
                 className="flex items-center justify-center w-full sm:w-[180px] h-[50px] rounded-[8px] text-white text-[12px] font-semibold tracking-[1px] uppercase transition-all hover:bg-white hover:text-[#03121A]"

@@ -56,30 +56,25 @@ export function CaseStudiesSection() {
 
         <div className="relative w-full flex items-center justify-center">
 
-          <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[10%] hidden md:block z-0 opacity-30 pointer-events-none">
-            <div className="rounded-[20px] overflow-hidden aspect-square" style={{ background: "#0D2235" }}>
-              <img src={caseStudies[prevIdx].image} alt="prev" className="w-full h-full object-contain" />
-            </div>
-          </div>
-
+         
           <div
             className="relative z-10 w-full md:w-[66%] rounded-[24px] overflow-hidden flex flex-col md:flex-row"
             style={{ background: "#01141B" }}
           >
             
             <div
-              className="w-full md:w-[42%] aspect-square shrink-0 flex items-center justify-center py-2 pl-2 md:py-6 md:pl-6"
+              className="w-full max-w-[280px] md:max-w-none mx-auto md:mx-0 md:w-[42%] aspect-square shrink-0 flex items-center justify-center p-4 md:py-6 md:pl-6"
               style={{ background: "#01141B" }}
             >
               <img
                 src={caseStudies[active].image}
                 alt={caseStudies[active].title}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain opacity-90"
               />
             </div>
 
-            <div className="flex flex-col justify-between gap-8 p-8 md:p-12 flex-1">
-              <div className="flex flex-col gap-5">
+            <div className="flex flex-col justify-between items-center text-center md:items-start md:text-left gap-8 p-6 md:p-12 flex-1">
+              <div className="flex flex-col items-center md:items-start gap-5">
                 <span
                   className="text-[#00A3FF] text-[10px] tracking-[1.5px] uppercase"
                   style={{ fontFamily: "var(--font-chivo-mono)" }}
@@ -93,7 +88,7 @@ export function CaseStudiesSection() {
                   {caseStudies[active].title}
                 </h3>
                 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center md:justify-start gap-3">
                   <div className="w-8 h-8 rounded-full bg-[#1A3241] flex items-center justify-center overflow-hidden shrink-0">
                     <img
                       src={caseStudies[active].companyIcon}
