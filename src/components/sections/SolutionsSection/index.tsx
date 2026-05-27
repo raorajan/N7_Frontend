@@ -81,7 +81,7 @@ export function SolutionsSection() {
           >
             <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[410px]">
               <Image 
-                src="/images/icons/Frame 90.png" 
+                src="/images/icons/dash_half.png" 
                 alt="AML Dashboard" 
                 fill
                 className="object-contain rounded-[10px]"

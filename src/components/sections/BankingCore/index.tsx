@@ -26,7 +26,7 @@ export function BankingCoreSection() {
         <div className="relative z-10 w-full lg:static">
           <div className="relative lg:absolute lg:top-[110px] lg:left-[-50px] w-[90%] sm:w-[85%] lg:w-[651.66px] h-[320px] lg:h-[461.42px] mt-8 lg:mt-0 ml-auto lg:ml-0">
             <Image
-              src="/images/icons/corebanking.png"
+              src="/images/icons/core_half.png"
               alt="KYC Dashboard"
               fill
               className="object-contain object-right lg:object-center"
