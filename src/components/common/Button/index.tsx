@@ -19,9 +19,9 @@ export function Button({
   const baseStyles = "inline-flex items-center justify-center uppercase transition-colors font-weight-400 whitespace-nowrap font-[family-name:var(--font-chivo-mono)]";
   
   const variants = {
-    primary: "bg-[linear-gradient(106.53deg,#00B4FD_-5.68%,#003ACE_86.98%)] hover:bg-none hover:bg-[#F2F8FC] text-white hover:text-[#0055FF] rounded-lg border border-transparent hover:border-[#F2F8FC] font-medium tracking-wider",
-    outline: "bg-transparent border border-white/20 hover:bg-[#F2F8FC] hover:text-[#0055FF] hover:border-[#F2F8FC] text-white rounded-lg font-medium tracking-wider",
-    "outline-nav": "bg-transparent border border-white/80 hover:bg-[#F2F8FC] hover:text-[#0055FF] hover:border-[#F2F8FC] text-white rounded-[6px]"
+    primary: "[background:linear-gradient(106.53deg,#00B4FD_-5.68%,#003ACE_86.98%)] hover:[background:#F2F8FC] hover:text-[#003ACE] text-white rounded-lg border border-transparent hover:border-[#F2F8FC] font-medium tracking-wider shadow-[0px_10px_30px_rgba(0,102,255,0.25)] hover:shadow-none",
+    outline: "[background:transparent] border border-white/30 hover:[background:#F2F8FC] hover:text-[#003ACE] hover:border-[#F2F8FC] text-white rounded-lg font-medium tracking-wider",
+    "outline-nav": "[background:transparent] border border-white/80 hover:[background:#F2F8FC] hover:text-[#003ACE] hover:border-[#F2F8FC] text-white rounded-[6px]"
   };
 
   const sizes = {

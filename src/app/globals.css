@@ -3,6 +3,11 @@
 :root {
   --background: #050b14;
   --foreground: #ffffff;
+  --font-geist-sans: "Geist", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+  --font-chivo-mono: "Chivo Mono", monospace;
+  --font-archivo: "Archivo", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 }
 
 @theme inline {

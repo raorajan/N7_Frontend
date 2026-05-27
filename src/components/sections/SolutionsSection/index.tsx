@@ -56,7 +56,7 @@ export function SolutionsSection() {
             <div className="flex flex-col items-center lg:items-start gap-[16px]">
               <Link
                 href="#demo"
-                className="inline-flex items-center justify-center uppercase text-white bg-[#0066FF] hover:bg-[#F2F8FC] hover:text-[#0055FF] transition-colors whitespace-nowrap font-medium tracking-wider w-full lg:w-[226px] h-[49px] rounded-[10px]"
+                className="inline-flex items-center justify-center uppercase text-white [background:#0066FF] hover:[background:#F2F8FC] hover:text-[#003ACE] transition-colors whitespace-nowrap font-medium tracking-wider w-full lg:w-[226px] h-[49px] rounded-[10px]"
                 style={{
                   fontFamily: "var(--font-chivo-mono)",
                   fontSize: "12px",

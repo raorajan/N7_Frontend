@@ -63,13 +63,13 @@ export function CaseStudiesSection() {
           </div>
 
           <div
-            className="relative z-10 w-full md:w-[78%] rounded-[24px] overflow-hidden flex flex-col md:flex-row"
-            style={{ background: "#0A1E2C" }}
+            className="relative z-10 w-full md:w-[66%] rounded-[24px] overflow-hidden flex flex-col md:flex-row"
+            style={{ background: "#01141B" }}
           >
             
             <div
-              className="w-full md:w-[42%] aspect-square shrink-0 flex items-center justify-center"
-              style={{ background: "#0D2235" }}
+              className="w-full md:w-[42%] aspect-square shrink-0 flex items-center justify-center py-2 pl-2 md:py-6 md:pl-6"
+              style={{ background: "#01141B" }}
             >
               <img
                 src={caseStudies[active].image}
@@ -116,22 +116,18 @@ export function CaseStudiesSection() {
             </div>
           </div>
 
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[10%] hidden md:block z-0 opacity-30 pointer-events-none">
-            <div className="rounded-[20px] overflow-hidden aspect-square" style={{ background: "#0D2235" }}>
-              <img src={caseStudies[nextIdx].image} alt="next" className="w-full h-full object-contain" />
-            </div>
-          </div>
         </div>
 
         <div className="relative flex items-center justify-center mt-10 gap-5 px-6 lg:px-[80px]">
 
           <button
             onClick={prev}
-            className="w-10 h-10 rounded-full border flex items-center justify-center text-white transition-colors hover:bg-white hover:text-[#000D12] shrink-0"
-            style={{ borderColor: "rgba(255,255,255,0.3)" }}
+            className="w-10 h-10 rounded-full border border-[#00B4FD] flex items-center justify-center text-[#00B4FD] transition-colors hover:bg-[#00B4FD] hover:text-white shrink-0"
             aria-label="Previous"
           >
-            ←
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
           </button>
 
           <div className="flex items-center gap-2">
@@ -152,11 +148,12 @@ export function CaseStudiesSection() {
 
           <button
             onClick={next}
-            className="w-10 h-10 rounded-full border flex items-center justify-center text-white transition-colors hover:bg-white hover:text-[#000D12] shrink-0"
-            style={{ borderColor: "rgba(255,255,255,0.3)" }}
+            className="w-10 h-10 rounded-full border border-[#00B4FD] flex items-center justify-center text-[#00B4FD] transition-colors hover:bg-[#00B4FD] hover:text-white shrink-0"
             aria-label="Next"
           >
-            →
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </button>
 
           <div className="absolute right-6 lg:right-[80px]">

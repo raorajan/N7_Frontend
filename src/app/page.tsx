@@ -21,10 +21,10 @@ export default function HomePage() {
       <PaperlessCTASection />
       <MarqueeBanner />
       <DigitalBankingSection />
-      {/* <InsightsSection /> */}
-      {/* <CaseStudiesSection /> */}
-      {/* <PaperlessCTASection /> */}
-      {/* <Footer /> */}
+      <InsightsSection />
+      <CaseStudiesSection />
+      <PaperlessCTASection />
+      <Footer />
     </>
   );
 }

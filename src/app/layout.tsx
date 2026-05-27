@@ -1,34 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Chivo_Mono, Archivo, Roboto } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const chivoMono = Chivo_Mono({
-  variable: "--font-chivo-mono",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
-
-const archivo = Archivo({
-  variable: "--font-archivo",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
 
 export const metadata: Metadata = {
   title: "N7",
@@ -43,8 +14,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${chivoMono.variable} ${archivo.variable} ${roboto.variable} h-full antialiased no-scrollbar`}
+      className="h-full antialiased no-scrollbar"
     >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Chivo+Mono:wght@400;500;700&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+      </head>
       <body className="min-h-full flex flex-col no-scrollbar">{children}</body>
     </html>
   );

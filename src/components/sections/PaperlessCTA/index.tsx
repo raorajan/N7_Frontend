@@ -42,7 +42,7 @@ export function PaperlessCTASection() {
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 shrink-0">
           <Link
             href="/contact"
-            className="flex items-center justify-center px-8 h-[50px] rounded-[8px] text-white text-[11px] font-semibold tracking-[1.5px] uppercase transition-all hover:bg-white hover:text-[#000D12]"
+            className="flex items-center justify-center px-8 h-[50px] rounded-[8px] text-white text-[11px] font-semibold tracking-[1.5px] uppercase transition-all [background:transparent] hover:[background:#F2F8FC] hover:text-[#003ACE] hover:border-[#F2F8FC]"
             style={{
               fontFamily: "var(--font-chivo-mono)",
               border: "1px solid rgba(255, 255, 255, 0.35)",
@@ -53,7 +53,7 @@ export function PaperlessCTASection() {
           </Link>
           <Link
             href="/demo"
-            className="flex items-center justify-center px-8 h-[50px] rounded-[8px] text-white text-[11px] font-semibold tracking-[1.5px] uppercase transition-all bg-[#0066FF] hover:bg-[#F2F8FC] hover:text-[#0055FF]"
+            className="flex items-center justify-center px-8 h-[50px] rounded-[8px] text-white text-[11px] font-semibold tracking-[1.5px] uppercase transition-all [background:#0066FF] hover:[background:#F2F8FC] hover:text-[#003ACE]"
             style={{
               fontFamily: "var(--font-chivo-mono)",
               boxShadow: "0px 10px 30px rgba(0, 102, 255, 0.25)",
