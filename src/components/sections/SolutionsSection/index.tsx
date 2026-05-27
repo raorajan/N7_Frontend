@@ -39,7 +39,7 @@ export function SolutionsSection() {
         </div>
 
         <div className="relative z-10 w-full lg:static">
-          <div className="relative lg:absolute lg:top-[156.88px] lg:left-[80px] w-full lg:w-[607.83px] h-auto lg:h-[308px] flex flex-col gap-[16px] items-start justify-center mt-8 lg:mt-0">
+          <div className="relative lg:absolute lg:top-[156.88px] lg:left-[80px] w-full lg:w-[607.83px] h-auto lg:h-[308px] flex flex-col gap-[16px] items-center lg:items-start justify-center text-center lg:text-left mt-8 lg:mt-0">
             <h2
               className="text-[#E9F4F9] text-[32px] lg:text-[48px] font-normal leading-[120%] tracking-[-1%]"
               style={{ fontFamily: "var(--font-archivo)" }}
@@ -53,7 +53,7 @@ export function SolutionsSection() {
               Faster time to market with our cloud-based <br className="hidden lg:block" /> core banking services
             </p>
             
-            <div className="flex flex-col items-start gap-[16px]">
+            <div className="flex flex-col items-center lg:items-start gap-[16px]">
               <Link
                 href="#demo"
                 className="inline-flex items-center justify-center uppercase text-white bg-[#0066FF] hover:bg-[#F2F8FC] hover:text-[#0055FF] transition-colors whitespace-nowrap font-medium tracking-wider w-full lg:w-[226px] h-[49px] rounded-[10px]"
@@ -76,16 +76,33 @@ export function SolutionsSection() {
         </div>
 
         <div className="relative z-10 w-full lg:static">
-          <div 
-            className="relative lg:absolute lg:top-[80.17px] lg:right-[-80px] w-full lg:w-[651.66px] h-auto lg:h-[461.42px] flex flex-col items-center justify-center mt-8 lg:mt-0"
-          >
-            <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[410px]">
+          {/* Desktop Image: dash_half */}
+          <div className="hidden lg:block absolute lg:top-[80.17px] lg:right-[-80px] lg:w-[651.66px] lg:h-[461.42px] z-10">
+            <div className="relative w-full h-full">
               <Image 
                 src="/images/icons/dash_half.png" 
                 alt="AML Dashboard" 
                 fill
-                className="object-contain rounded-[10px]"
-                sizes="(max-width: 1024px) 100vw, 651px"
+                className="object-contain object-right"
+                sizes="651px"
+              />
+            </div>
+          </div>
+
+          {/* Mobile Images: Complete dashboard + trackpad notch */}
+          <div className="relative w-full lg:hidden flex flex-col items-center justify-center mt-10 px-4 sm:px-8">
+            <div className="relative w-[85%] border-t border-l border-r border-white/20 rounded-t-[10px] overflow-hidden flex bg-[#000D12]">
+              <img 
+                src="/images/icons/dashboard.png" 
+                alt="AML Dashboard Full" 
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="relative w-full border border-white/20 rounded-[8px] z-20 flex bg-[#000D12] -mt-[1px]">
+              <img
+                src="/images/icons/trackpad_notch.png"
+                alt="Trackpad Notch"
+                className="w-full h-auto object-cover"
               />
             </div>
           </div>
