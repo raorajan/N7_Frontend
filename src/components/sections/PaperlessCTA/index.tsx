@@ -20,11 +20,11 @@ export function PaperlessCTASection() {
       />
 
       <div
-        className="relative z-10 max-w-[1440px] mx-auto w-full px-6 lg:px-[80px] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10"
+        className="relative z-10 max-w-[1440px] mx-auto w-full px-6 lg:px-[80px] flex flex-col lg:flex-row items-center justify-between gap-10"
         style={{ minHeight: "auto", paddingTop: "32px", paddingBottom: "32px" }}
       >
         
-        <div className="flex flex-col gap-4 max-w-[560px]">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-4 max-w-[560px]">
           <h2
             className="text-white text-[36px] md:text-[48px] lg:text-[54px] font-normal leading-[115%] tracking-[-1px]"
             style={{ fontFamily: "var(--font-archivo)" }}

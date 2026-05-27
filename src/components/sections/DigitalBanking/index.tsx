@@ -89,7 +89,7 @@ export function DigitalBankingSection() {
         </div>
 
         <div className="flex flex-col gap-16 xl:hidden">
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 text-center md:text-left items-center md:items-start">
             <h2 className="text-[#03121A] text-[32px] md:text-[40px] font-bold leading-[115%]" style={{ fontFamily: "var(--font-archivo)" }}>
               Digital banking out-of-the-box
             </h2>
@@ -105,7 +105,7 @@ export function DigitalBankingSection() {
             <div className="w-full max-w-[260px] mx-auto md:mx-0 shrink-0 h-auto">
               <PhoneMockup imageSrc="/images/hero/iPhone 13 Pro_1.png" alt="Digital banking out-of-the-box" />
             </div>
-            <div className="flex flex-col gap-4 flex-1">
+            <div className="flex flex-col gap-4 flex-1 text-center md:text-left items-center md:items-start">
               <h3 className="text-[#03121A] text-[18px] md:text-[20px] font-bold" style={{ fontFamily: "var(--font-archivo)" }}>Fully compliant with regulatory requirement</h3>
               <p className="text-[#4A6678] text-[13px] leading-[165%]" style={{ fontFamily: "var(--font-archivo)" }}>
                 The governance of risk management with regulations is achieved by our risk management framework that is fully integrated to work with digital bank&apos;s operational risk protocols and procedures.
@@ -118,7 +118,7 @@ export function DigitalBankingSection() {
             <div className="w-full max-w-[260px] mx-auto md:mx-0 shrink-0 h-auto">
               <PhoneMockup imageSrc="/images/hero/iPhone 13 Pro_2.png" alt="No legacy IT systems" />
             </div>
-            <div className="flex flex-col gap-4 flex-1">
+            <div className="flex flex-col gap-4 flex-1 text-center md:text-left items-center md:items-start">
               <h3 className="text-[#03121A] text-[18px] md:text-[20px] font-bold" style={{ fontFamily: "var(--font-archivo)" }}>No legacy IT systems</h3>
               <p className="text-[#4A6678] text-[13px] leading-[165%]" style={{ fontFamily: "var(--font-archivo)" }}>
                 Our Digital Banking solution and multilayered approach helps financial institutions take advantage of digital transformation by ensuring customer trust and regulatory compliance.
@@ -131,7 +131,7 @@ export function DigitalBankingSection() {
             <div className="w-full max-w-[260px] mx-auto md:mx-0 shrink-0 h-auto">
               <PhoneMockup imageSrc="/images/hero/iPhone 13 Pro_3.png" alt="No traditional branches" />
             </div>
-            <div className="flex flex-col gap-4 flex-1">
+            <div className="flex flex-col gap-4 flex-1 text-center md:text-left items-center md:items-start">
               <h3 className="text-[#03121A] text-[18px] md:text-[20px] font-bold" style={{ fontFamily: "var(--font-archivo)" }}>No traditional branches</h3>
               <p className="text-[#4A6678] text-[13px] leading-[165%]" style={{ fontFamily: "var(--font-archivo)" }}>
                 Our Digital Banking out-of-the-box helps you to accelerate innovation while reducing risks and optimising operational costs for a seamless branchless experience.
@@ -169,8 +169,8 @@ export function DigitalBankingSection() {
             </text>
           </svg>
 
-          <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 px-8 lg:px-16 py-12 lg:py-14">
-            <div className="flex flex-col gap-4 max-w-[520px]">
+          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 px-8 lg:px-16 py-12 lg:py-14">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-4 max-w-[520px]">
               <h2
                 className="text-white text-[32px] lg:text-[42px] font-bold leading-[115%] tracking-[-0.5px]"
                 style={{ fontFamily: "var(--font-archivo)" }}

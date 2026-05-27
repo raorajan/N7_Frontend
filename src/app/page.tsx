@@ -18,9 +18,9 @@ export default function HomePage() {
       <FeaturesSection />
       <SolutionsSection />
       <BankingCoreSection />
-      {/* <PaperlessCTASection /> */}
-      {/* <MarqueeBanner /> */}
-      {/* <DigitalBankingSection /> */}
+      <PaperlessCTASection />
+      <MarqueeBanner />
+      <DigitalBankingSection />
       {/* <InsightsSection /> */}
       {/* <CaseStudiesSection /> */}
       {/* <PaperlessCTASection /> */}
