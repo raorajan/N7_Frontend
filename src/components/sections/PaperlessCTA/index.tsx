@@ -6,7 +6,7 @@ export function PaperlessCTASection() {
       className="relative w-full overflow-hidden"
       style={{ background: "#000D12", minHeight: "316px" }}
     >
-      {/* Faint radial glow top-left */}
+      
       <div
         className="absolute pointer-events-none"
         style={{
@@ -19,12 +19,11 @@ export function PaperlessCTASection() {
         }}
       />
 
-      {/* Content */}
       <div
         className="relative z-10 max-w-[1440px] mx-auto w-full px-6 lg:px-[80px] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10"
-        style={{ minHeight: "316px", paddingTop: "60px", paddingBottom: "60px" }}
+        style={{ minHeight: "auto", paddingTop: "32px", paddingBottom: "32px" }}
       >
-        {/* Left: Heading + Subtitle */}
+        
         <div className="flex flex-col gap-4 max-w-[560px]">
           <h2
             className="text-white text-[36px] md:text-[48px] lg:text-[54px] font-normal leading-[115%] tracking-[-1px]"
@@ -40,7 +39,6 @@ export function PaperlessCTASection() {
           </p>
         </div>
 
-        {/* Right: Buttons */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 shrink-0">
           <Link
             href="/contact"

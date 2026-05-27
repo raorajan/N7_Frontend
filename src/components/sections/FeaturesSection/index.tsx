@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-// ─── Data ────────────────────────────────────────────────────────────────────
-
 const features = [
   {
     title: "Core Banking CB7",
@@ -35,8 +33,6 @@ const features = [
     icon: "/images/icons/loan-management.png",
   },
 ];
-
-// ─── Reusable FeatureCard ─────────────────────────────────────────────────────
 
 interface FeatureCardProps {
   icon: string;
@@ -75,14 +71,11 @@ function FeatureCard({ icon, title, description }: FeatureCardProps) {
   );
 }
 
-// ─── Section ──────────────────────────────────────────────────────────────────
-
 export function FeaturesSection() {
   return (
-    <section className="relative w-full max-w-[1440px] mx-auto bg-[#000D12] lg:h-[1177px] py-16 lg:py-0 overflow-hidden">
+    <section className="relative w-full max-w-[1440px] mx-auto bg-[#000D12] lg:h-[1177px] py-8 lg:py-0 overflow-hidden">
       <div className="relative w-full h-full max-w-[1440px] mx-auto flex flex-col lg:block px-6 lg:px-0 gap-12 lg:gap-0">
-        
-        {/* Glowing Ellipse */}
+
         <div 
           className="absolute rounded-full pointer-events-none hidden lg:block"
           style={{
@@ -97,7 +90,6 @@ export function FeaturesSection() {
           }}
         />
 
-        {/* Left Box */}
         <div className="contents lg:block">
           <div className="hidden lg:block absolute inset-0 -z-10" />
           <div className="lg:absolute lg:top-[47px] lg:left-[80px] w-full lg:w-[433px] h-auto lg:h-[185px] flex flex-col gap-6 lg:gap-[48px] items-center lg:items-start text-center lg:text-left pt-8 lg:pt-0">
@@ -108,7 +100,6 @@ export function FeaturesSection() {
               All of our solutions are <br /> tailor-made to your needs,
             </h2>
 
-            {/* Request Demo Button */}
             <Link
               href="#demo"
               className="inline-flex items-center justify-center uppercase text-white border border-white/20 hover:bg-[#F2F8FC] hover:text-[#0055FF] hover:border-[#F2F8FC] transition-colors whitespace-nowrap font-medium tracking-wider w-full sm:w-[226px] h-[49px] rounded-[10px]"
@@ -122,7 +113,6 @@ export function FeaturesSection() {
           </div>
         </div>
 
-        {/* Right Box — 5 Feature Cards in a 2-col grid */}
         <div className="lg:absolute lg:top-[47px] lg:right-[80px] w-full lg:w-[613px] h-auto lg:h-[1085px] flex flex-col gap-[76px] mt-8 lg:mt-0">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-[26px]">
             {features.map((feature) => (

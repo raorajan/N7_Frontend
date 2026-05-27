@@ -1,28 +1,5 @@
 import Link from "next/link";
-
-function CheckIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
-      <circle cx="10" cy="10" r="10" fill="#0066FF" />
-      <path d="M5.5 10.5L8.5 13.5L14.5 7.5" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
-function FeatureList({ items }: { items: string[] }) {
-  return (
-    <ul className="flex flex-col gap-3 mt-4">
-      {items.map((item) => (
-        <li key={item} className="flex items-center gap-3">
-          <CheckIcon />
-          <span className="text-[#03121A] text-[14px] leading-[160%]" style={{ fontFamily: "var(--font-archivo)" }}>
-            {item}
-          </span>
-        </li>
-      ))}
-    </ul>
-  );
-}
+import { FeatureList } from "../../common/FeatureList";
 
 function PhoneMockup({ imageSrc, alt }: { imageSrc: string; alt: string }) {
   return (
@@ -35,14 +12,8 @@ function PhoneMockup({ imageSrc, alt }: { imageSrc: string; alt: string }) {
 export function DigitalBankingSection() {
   return (
     <section className="relative w-full bg-[#E9F4F9] overflow-hidden">
-      
-      {/* ══ CONTENT CONTAINER ══ */}
-      <div className="max-w-[1440px] mx-auto w-full px-6 lg:px-[80px] py-16 lg:py-[100px]">
-        
-        {/* ══ DESKTOP LAYOUT (Flex-based, fully responsive, >= 1280px) ══ */}
+      <div className="max-w-[1440px] mx-auto w-full px-6 lg:px-[80px] py-8 lg:py-[100px]">
         <div className="hidden xl:flex items-start justify-between gap-12 xl:gap-[100px]">
-          
-          {/* LEFT COLUMN (Static Text) */}
           <div className="flex flex-col gap-6 w-[360px] xl:w-[420px] shrink-0 mt-[120px]">
             <h2 className="text-[#03121A] text-[36px] xl:text-[48px] font-bold leading-[115%] tracking-[-1px]" style={{ fontFamily: "var(--font-archivo)" }}>
               Digital banking out-of-the-box
@@ -68,10 +39,7 @@ export function DigitalBankingSection() {
             </div>
           </div>
 
-          {/* RIGHT COLUMN (Zigzag Phones & Features) */}
           <div className="flex-1 max-w-[650px] relative flex flex-col gap-[110px]">
-            
-            {/* SVG Connecting Line Background */}
             <div className="absolute top-[270px] bottom-[270px] left-[130px] right-[130px] pointer-events-none z-0 hidden xl:block">
                <svg width="100%" height="100%" preserveAspectRatio="none">
                  <path d="M 0,0 C 0,30% 100%,20% 100%,50%" stroke="#0066FF" strokeWidth="1.5" fill="none" strokeOpacity="0.2"/>
@@ -79,7 +47,6 @@ export function DigitalBankingSection() {
                </svg>
             </div>
 
-            {/* Row 1 */}
             <div className="relative z-10 flex flex-row items-center justify-between gap-8 h-[540px]">
               <PhoneMockup imageSrc="/images/hero/iPhone 13 Pro_1.png" alt="Digital banking" />
               <div className="flex flex-col gap-4 flex-1">
@@ -93,7 +60,6 @@ export function DigitalBankingSection() {
               </div>
             </div>
 
-            {/* Row 2 */}
             <div className="relative z-10 flex flex-row items-center justify-between gap-8 h-[540px]">
               <div className="flex flex-col gap-4 flex-1">
                 <h3 className="text-[#03121A] text-[20px] font-bold leading-[130%]" style={{ fontFamily: "var(--font-archivo)" }}>
@@ -107,7 +73,6 @@ export function DigitalBankingSection() {
               <PhoneMockup imageSrc="/images/hero/iPhone 13 Pro_2.png" alt="No legacy IT systems" />
             </div>
 
-            {/* Row 3 */}
             <div className="relative z-10 flex flex-row items-center justify-between gap-8 h-[540px]">
               <PhoneMockup imageSrc="/images/hero/iPhone 13 Pro_3.png" alt="No traditional branches" />
               <div className="flex flex-col gap-4 flex-1">
@@ -123,9 +88,7 @@ export function DigitalBankingSection() {
           </div>
         </div>
 
-        {/* ══ TABLET & MOBILE LAYOUT (< 1280px) ══ */}
         <div className="flex flex-col gap-16 xl:hidden">
-          {/* Main Title Block */}
           <div className="flex flex-col gap-6">
             <h2 className="text-[#03121A] text-[32px] md:text-[40px] font-bold leading-[115%]" style={{ fontFamily: "var(--font-archivo)" }}>
               Digital banking out-of-the-box
@@ -138,7 +101,6 @@ export function DigitalBankingSection() {
             </Link>
           </div>
 
-          {/* Block 1 */}
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-full max-w-[260px] mx-auto md:mx-0 shrink-0 h-auto">
               <PhoneMockup imageSrc="/images/hero/iPhone 13 Pro_1.png" alt="Digital banking out-of-the-box" />
@@ -152,7 +114,6 @@ export function DigitalBankingSection() {
             </div>
           </div>
 
-          {/* Block 2 */}
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-full max-w-[260px] mx-auto md:mx-0 shrink-0 h-auto">
               <PhoneMockup imageSrc="/images/hero/iPhone 13 Pro_2.png" alt="No legacy IT systems" />
@@ -166,7 +127,6 @@ export function DigitalBankingSection() {
             </div>
           </div>
 
-          {/* Block 3 */}
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="w-full max-w-[260px] mx-auto md:mx-0 shrink-0 h-auto">
               <PhoneMockup imageSrc="/images/hero/iPhone 13 Pro_3.png" alt="No traditional branches" />
@@ -181,12 +141,10 @@ export function DigitalBankingSection() {
           </div>
         </div>
 
-        {/* ══ CTA Box ══ */}
         <div
           className="relative mt-20 lg:mt-32 rounded-[24px] overflow-hidden"
           style={{ background: "#03121A" }}
         >
-          {/* CB7 background stroke text */}
           <svg
             className="absolute right-0 top-0 h-full pointer-events-none select-none"
             viewBox="0 0 700 280"
@@ -211,9 +169,7 @@ export function DigitalBankingSection() {
             </text>
           </svg>
 
-          {/* Content */}
           <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 px-8 lg:px-16 py-12 lg:py-14">
-            {/* Left: Text */}
             <div className="flex flex-col gap-4 max-w-[520px]">
               <h2
                 className="text-white text-[32px] lg:text-[42px] font-bold leading-[115%] tracking-[-0.5px]"
@@ -229,7 +185,6 @@ export function DigitalBankingSection() {
               </p>
             </div>
 
-            {/* Right: Buttons */}
             <div className="flex flex-col sm:flex-row lg:flex-row items-stretch sm:items-center gap-4 w-full lg:w-auto shrink-0">
               <Link
                 href="/contact"

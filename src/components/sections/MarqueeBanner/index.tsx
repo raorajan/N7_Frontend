@@ -23,7 +23,6 @@ const regularText: React.CSSProperties = {
   display: "inline-block",
 };
 
-// CSS filter to convert white/any PNG to #000D12 dark navy
 const vectorFilter: React.CSSProperties = {
   flexShrink: 0,
   display: "inline-block",
@@ -92,7 +91,7 @@ export function MarqueeBanner() {
 
       <div className="marquee-wrap">
         <Strip />
-        {/* Exact duplicate for seamless loop */}
+        
         <Strip />
       </div>
     </section>

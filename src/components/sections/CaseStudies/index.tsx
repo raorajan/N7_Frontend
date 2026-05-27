@@ -45,9 +45,8 @@ export function CaseStudiesSection() {
 
   return (
     <section className="relative w-full overflow-hidden" style={{ background: "#000D12" }}>
-      <div className="max-w-[1440px] mx-auto w-full py-16 lg:py-[100px]">
+      <div className="max-w-[1440px] mx-auto w-full py-8 lg:py-[100px]">
 
-        {/* Title */}
         <h2
           className="text-white text-center text-[36px] md:text-[48px] font-normal leading-[120%] tracking-[-0.5px] mb-12 lg:mb-16"
           style={{ fontFamily: "var(--font-archivo)" }}
@@ -55,22 +54,19 @@ export function CaseStudiesSection() {
           Our Case Studies
         </h2>
 
-        {/* Carousel */}
         <div className="relative w-full flex items-center justify-center">
 
-          {/* Peeking Prev Card */}
           <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[10%] hidden md:block z-0 opacity-30 pointer-events-none">
             <div className="rounded-[20px] overflow-hidden aspect-square" style={{ background: "#0D2235" }}>
               <img src={caseStudies[prevIdx].image} alt="prev" className="w-full h-full object-contain" />
             </div>
           </div>
 
-          {/* Active Card */}
           <div
             className="relative z-10 w-full md:w-[78%] rounded-[24px] overflow-hidden flex flex-col md:flex-row"
             style={{ background: "#0A1E2C" }}
           >
-            {/* Square Image */}
+            
             <div
               className="w-full md:w-[42%] aspect-square shrink-0 flex items-center justify-center"
               style={{ background: "#0D2235" }}
@@ -82,7 +78,6 @@ export function CaseStudiesSection() {
               />
             </div>
 
-            {/* Text Content */}
             <div className="flex flex-col justify-between gap-8 p-8 md:p-12 flex-1">
               <div className="flex flex-col gap-5">
                 <span
@@ -97,7 +92,7 @@ export function CaseStudiesSection() {
                 >
                   {caseStudies[active].title}
                 </h3>
-                {/* Company */}
+                
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full bg-[#1A3241] flex items-center justify-center overflow-hidden shrink-0">
                     <img
@@ -121,7 +116,6 @@ export function CaseStudiesSection() {
             </div>
           </div>
 
-          {/* Peeking Next Card */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[10%] hidden md:block z-0 opacity-30 pointer-events-none">
             <div className="rounded-[20px] overflow-hidden aspect-square" style={{ background: "#0D2235" }}>
               <img src={caseStudies[nextIdx].image} alt="next" className="w-full h-full object-contain" />
@@ -129,10 +123,8 @@ export function CaseStudiesSection() {
           </div>
         </div>
 
-        {/* Controls Row */}
         <div className="relative flex items-center justify-center mt-10 gap-5 px-6 lg:px-[80px]">
 
-          {/* Prev Arrow */}
           <button
             onClick={prev}
             className="w-10 h-10 rounded-full border flex items-center justify-center text-white transition-colors hover:bg-white hover:text-[#000D12] shrink-0"
@@ -142,7 +134,6 @@ export function CaseStudiesSection() {
             ←
           </button>
 
-          {/* Pagination Dots */}
           <div className="flex items-center gap-2">
             {caseStudies.map((_, i) => (
               <button
@@ -159,7 +150,6 @@ export function CaseStudiesSection() {
             ))}
           </div>
 
-          {/* Next Arrow */}
           <button
             onClick={next}
             className="w-10 h-10 rounded-full border flex items-center justify-center text-white transition-colors hover:bg-white hover:text-[#000D12] shrink-0"
@@ -169,7 +159,6 @@ export function CaseStudiesSection() {
             →
           </button>
 
-          {/* View All — absolutely right */}
           <div className="absolute right-6 lg:right-[80px]">
             <Link
               href="#"

@@ -3,10 +3,9 @@ import Image from "next/image";
 
 export function SolutionsSection() {
   return (
-    <section className="relative w-full max-w-[1440px] mx-auto bg-[#000D12] lg:h-[600px] overflow-hidden py-10 lg:py-0">
-      <div className="relative w-full h-full max-w-[1440px] mx-auto flex flex-col lg:block px-6 lg:px-0 gap-12 lg:gap-0">
-        
-        {/* Large CB7 Background Text */}
+    <section className="relative w-full max-w-[1440px] mx-auto bg-[#000D12] lg:h-[600px] overflow-hidden py-6 lg:py-0">
+      <div className="relative w-full h-full max-w-[1440px] mx-auto flex flex-col lg:block px-6 lg:px-0 gap-6 lg:gap-0">
+
         <div 
           className="absolute z-0 pointer-events-none hidden lg:block" 
           style={{ 
@@ -39,7 +38,6 @@ export function SolutionsSection() {
           </svg>
         </div>
 
-        {/* Left Box */}
         <div className="relative z-10 w-full lg:static">
           <div className="relative lg:absolute lg:top-[156.88px] lg:left-[80px] w-full lg:w-[607.83px] h-auto lg:h-[308px] flex flex-col gap-[16px] items-start justify-center mt-8 lg:mt-0">
             <h2
@@ -77,7 +75,6 @@ export function SolutionsSection() {
           </div>
         </div>
 
-        {/* Right Box (Dashboard Image) */}
         <div className="relative z-10 w-full lg:static">
           <div 
             className="relative lg:absolute lg:top-[80.17px] lg:left-[727px] w-full lg:w-[651.66px] h-auto lg:h-[461.42px] flex flex-col items-center justify-center mt-8 lg:mt-0"
