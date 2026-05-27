@@ -18,13 +18,13 @@ export default function HomePage() {
       <FeaturesSection />
       <SolutionsSection />
       <BankingCoreSection />
-      <PaperlessCTASection />
-      <MarqueeBanner />
-      <DigitalBankingSection />
-      <InsightsSection />
-      <CaseStudiesSection />
-      <PaperlessCTASection />
-      <Footer />
+      {/* <PaperlessCTASection /> */}
+      {/* <MarqueeBanner /> */}
+      {/* <DigitalBankingSection /> */}
+      {/* <InsightsSection /> */}
+      {/* <CaseStudiesSection /> */}
+      {/* <PaperlessCTASection /> */}
+      {/* <Footer /> */}
     </>
   );
 }
